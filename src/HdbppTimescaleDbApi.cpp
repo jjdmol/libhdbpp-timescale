@@ -255,7 +255,7 @@ auto HdbppTimescaleDbApi::supported(HdbppFeatures feature) -> bool
     {
         case HdbppFeatures::TTL: supported = true; break;
 
-        case HdbppFeatures::BATCH_INSERTS: supported = true; break;
+        case HdbppFeatures::BATCH_INSERTS: supported = false; break;
     }
 
     return supported;
